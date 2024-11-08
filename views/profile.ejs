@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Datos Personales</title>
+</head>
+<body>
+    <!-- Barra de navegación superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#">trabajo Sena</a>
+        <div class="ml-auto">
+            <a class="btn btn-outline-light" href="/login">Salir</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <h2 class="text-center text-secondary">Datos Personales</h2>
+        <div class="card mt-4">
+            <div class="card-body">
+                <p><strong>Nombre Completo:</strong> <%= user.primer_nombre %> <%= user.segundo_nombre %> <%= user.primer_apellido%> <%= user.segundo_apellido%></p>
+                <p><strong>Teléfono:</strong> <%= user.telefono %></p>
+                <p><strong>Fecha de Nacimiento:</strong> <%= user.birth %></p>
+                <p><strong>RH:</strong> <%= user.rh %></p>
+                <p><strong>Dirección:</strong> <%= user.direccion %></p>
+                <p><strong>Correo:</strong> <%= user.correo%></p>
+                <p><strong>Ciudad:</strong> <%= user.ciudad%></p>
+                <p><strong>Número de Identificación:</strong> <%= user.identificacion %></p>
+                <p><strong>Ocupación:</strong> <%= user.ocupacion %></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white text-center p-3 mt-4">
+        <p>&copy; 2024 Proyecto Web. Desarrollado por Diover Diaz</p>
+    </footer>
+</body>
+</html>

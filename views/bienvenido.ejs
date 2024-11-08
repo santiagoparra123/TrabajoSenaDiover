@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <!-- Barra de navegación superior con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <!-- Título o logo del proyecto -->
+        <a class="navbar-brand" href="#">trabajo Sena</a>
+        <!-- Opciones de navegación alineadas a la derecha -->
+        <div class="ml-auto">
+            <!-- Botón para ir a la página de Login -->
+            <a class="btn btn-outline-light mr-2" href="/login">Login</a>
+            <!-- Botón para ir a la página de Register -->
+            <a class="btn btn-outline-light" href="/formulario">Formulario</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <div class="main-content">
+        <!-- Contenedor centrado para mostrar el mensaje de bienvenida -->
+        <div class="container text-center mt-5">
+            <!-- Mensaje de bienvenida que muestra el nombre de usuario dinámicamente -->
+            <h1 class="text-secondary">Bienvenido, <%= userName%>!</h1>
+            <!-- Mensaje adicional de bienvenida -->
+            <p>¡Nos alegra que estés aquí!</p>
+
+             <!-- Botón para acceder a los datos personales -->
+             <a href="/profile" class="btn btn-secondary mt-4">Datos Personales</a>
+            </div>
+        </div>
+   
+
+    <!-- Footer al final de la página -->
+    <footer class="bg-secondary text-white text-center p-3">
+        <!-- Texto del footer con derechos de autor -->
+        <p>&copy; 2024 Proyecto Web. Desarrollado por Diover Diaz</p>
+    </footer>
+</body>
+</html>

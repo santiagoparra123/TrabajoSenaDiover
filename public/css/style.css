@@ -1,0 +1,35 @@
+/* Fondo del cuerpo del documento */
+body {
+    background-color: #c1c4c8; /* Color de fondo amarillo para el cuerpo */
+}
+
+/* Configuración general para HTML y el cuerpo del documento */
+html, body {
+    height: 100%; /* Asegura que ocupen toda la altura de la ventana */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    display: flex; /* Usa Flexbox para la organización del contenido */
+    flex-direction: column; /* Alinea los elementos en una columna */
+}
+
+/* Contenedor principal de contenido */
+.main-content {
+    flex: 1; /* Expande este contenedor para ocupar el espacio disponible */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 500px; /* Limita el ancho máximo a 500px */
+    margin: auto; /* Centra el formulario horizontalmente */
+    padding: 2rem; /* Espaciado interno alrededor del formulario */
+    background: white; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de profundidad */
+}
+
+/* Estilos del pie de página */
+.footer {
+    color: white; /* Color de texto blanco */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto dentro del pie de página */
+    width: 100%; /* Ancho completo para que ocupe todo el espacio en la parte inferior */
+}
